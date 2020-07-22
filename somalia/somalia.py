@@ -101,11 +101,11 @@ def main():
 
 #%%
     # Index of districts with known aliases in som_centroids
-    dep_i = [0, 10, 12, 13, 16, 18, 20, 27, 40, 43, 52, 57, 60, 65, 68, 69, 70]
+    dep_i = [0, 6, 9, 10, 12, 13, 16, 18, 20, 27, 34, 40, 43, 52, 55, 56, 57, 60, 65, 68, 69, 70]
     # Index of som_centroids district name corresponding to dep_i
-    dist_i = [0, 8, 12, 11, 15, 17, 19, 26, 41, 38, 50, 53, 57, 62, 65, 66, 67]
+    dist_i = [0, 10, 56, 8, 12, 11, 15, 17, 19, 26, 5, 41, 38, 50, 5, 5, 53, 57, 62, 65, 66, 67]
     # Index of districts with unknown aliases
-    dep_i_unk = [6,9,34,55,56]
+    #dep_i_unk = [6,9,34,55,56] # 10, 56, 5, 5, 5
 
     # Regions with unknown aliases:
         #Baidoa
@@ -129,7 +129,7 @@ def main():
             # For unknown districts, insert '?'
             dist_vals.append('??')
     # Generate dictionary
-    dist_dict = dict(zip(dd,dist_keys))
+    dist_dict = dict(zip(dd,dist_vals))
 
     unhcr['DEP_ALIAS'] = 'NA'
     unhcr['DEPARTURE_X'] = 0
