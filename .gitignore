@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 #Jupyter Notebook
 .ipynb_checkpoints
+=======
+.DS_Store*
+.ipynb_checkpoints*
+>>>>>>> 7a7d53629fe4a6146b61900800eb7d696ca5df7f
